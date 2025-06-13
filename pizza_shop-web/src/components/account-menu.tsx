@@ -20,18 +20,18 @@ export function AccountMenu(){
         <DropdownMenuLabel className="flex flex-col">
           <span>Matheus Oliveira</span>
           <span className="text-xs font-normal text-muted-foreground">
-            matheus-homem2011@hotmail.com
+            matheus-homem2001@hotmail.com
           </span>
         </DropdownMenuLabel>
 
         <DropdownMenuSeparator/>
 
-        <DropdownMenuItem>
+        <DropdownMenuItem className="cursor-pointer">
           <Building className="w-4 h-4 mr-2" />
           <span>Perfil da Loja</span>
         </DropdownMenuItem>
 
-        <DropdownMenuItem className="text-red-600 dark:text-red-400 ">
+        <DropdownMenuItem className="text-red-600 dark:text-red-400 cursor-pointer">
           <LogOut className="w-4 h-4 mr-2" />
           <span>Sair</span>
         </DropdownMenuItem>
