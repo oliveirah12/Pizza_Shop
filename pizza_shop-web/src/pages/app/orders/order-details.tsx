@@ -67,7 +67,7 @@ export function OrderDetails(){
             <TableRow>
               <TableHead>Produto</TableHead>
               <TableHead className="text-right">Qtd.</TableHead>
-              <TableHead className="text-right">Produto</TableHead>
+              <TableHead className="text-right">Preço</TableHead>
               <TableHead className="text-right">Subtotal</TableHead>
             </TableRow>
           </TableHeader>
