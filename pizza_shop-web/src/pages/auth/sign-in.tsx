@@ -40,6 +40,7 @@ export function SignIn(){
   return (
     <>
       <Helmet title="Login" />
+      <title>Pizza Shop | Login</title>
 
       <div className="p-8 ">
         <Button variant={"ghost"} asChild className="absolute right-8 top-8">
