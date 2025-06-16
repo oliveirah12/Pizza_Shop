@@ -55,6 +55,7 @@ export function OrderTableRow(props: OrderTableRowProps){
       </TableCell>
 
     </TableRow>
+
   )
 }
 
