@@ -13,8 +13,6 @@ export function OrderTableRow(props: OrderTableRowProps){
       <TableCell>
         <Dialog>
           <DialogTrigger asChild>
-
-          
             <Button variant='outline' size='xs'>
               <Search className="h-3 w-3" />
               <span className="sr-only"> Detalhes do Pedido</span>
