@@ -40,6 +40,7 @@ export function RevenueChart(){
               tickFormatter={(value: number) => 
               value.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}
             />
+            <CartesianGrid vertical={false} className="stroke-muted" />  
 
             <Line
               type="linear"
