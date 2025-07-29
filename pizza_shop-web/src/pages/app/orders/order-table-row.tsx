@@ -3,7 +3,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { TableCell, TableRow } from "@/components/ui/table";
 import { ArrowRight, Search, X } from "lucide-react";
 import { OrderDetails } from "./order-details";
-import { OrderStatus } from "./order-status";
+import { OrderStatus } from "../../../components/order-status";
 import { formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
 
@@ -39,7 +39,9 @@ export function OrderTableRow({ order }: OrderTableRowProps){
         {order.orderId}
       </TableCell>
 
-      <TableCell className="text-muted-foreground">
+      <TableCell className="text-muted-foreground hover:cursor-default"
+                  title={new Date(order.createdAt).toLocaleString('pt-BR')}
+      >
         {formatDistanceToNow(order.createdAt, {
           locale: ptBR,
           addSuffix: true,
