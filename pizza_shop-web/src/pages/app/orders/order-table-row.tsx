@@ -7,7 +7,7 @@ import { OrderStatus } from "../../../components/order-status";
 import { formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
 import { useState } from "react";
-import { useMutation, useQueries, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { cancelOrder } from "@/api/cancel-order";
 import type { GetOrdersResponse } from "@/api/get-orders";
 import { deliverOrder } from "@/api/deliver-order";
@@ -97,7 +97,7 @@ export function OrderTableRow({ order }: OrderTableRowProps){
             </Button>
           </DialogTrigger>
 
-          <OrderDetails orderId={order.orderId} open={isDetailsOpen}/>
+          <OrderDetails open={isDetailsOpen} orderId={order.orderId} />
 
         </Dialog>
       </TableCell>
