@@ -1,4 +1,4 @@
-import { getMonthOrdersAmount } from "@/api/gat-month-orders-amount.ts";
+import { getMonthOrdersAmount } from "@/api/get-month-orders-amount.ts";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useQuery } from "@tanstack/react-query";
 import { Utensils } from "lucide-react";
