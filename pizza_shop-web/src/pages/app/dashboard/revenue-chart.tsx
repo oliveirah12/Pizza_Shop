@@ -1,4 +1,4 @@
-import { getDailyRevenueInPeriod } from "@/api/get-daily-revenues-in-period";
+import { getDailyRevenueInPeriod } from "@/api/get-daily-revenue-in-period";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import DateRangePicker from "@/components/ui/date-range-picker";
 import { Label } from "@/components/ui/label";
