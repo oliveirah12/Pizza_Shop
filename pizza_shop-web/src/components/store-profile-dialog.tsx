@@ -60,11 +60,11 @@ export function StoreProfileDialog(){
     onMutate({name, description}){
       const { cached } = updateManagedRestaurantCache({name, description})
 
-      return { previouProfile: cached }
+      return { previousProfile: cached }
     },
     onError(_error, _variables, context) {
-      if(context?.previouProfile){
-        updateManagedRestaurantCache(context.previouProfile)
+      if(context?.previousProfile){
+        updateManagedRestaurantCache(context.previousProfile)
       }
     },
   })
